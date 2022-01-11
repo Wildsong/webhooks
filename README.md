@@ -1,9 +1,6 @@
 # webhooks
 
-Listen to whatever comes in and dump it to the console screen.
-I need to listen on HTTPS but adding the cryptography
-package which forces openssl 3.0 be downgraded to 1.1 -- 
-bad for production but okay for testing.
+Listen to whatever comes in and append it to requests.json.
 
 I have to run this in a Docker because it has to be reverse proxied, ArcGIS will not accept a self-signed certificate.
 
@@ -16,4 +13,6 @@ I have to run this in a Docker because it has to be reverse proxied, ArcGIS will
 docker-compose up -d
 ```
 
+
+Don't use docker swarm for this because it's behind the proxy.
 
