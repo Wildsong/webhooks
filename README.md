@@ -6,6 +6,7 @@ I have to run this in a Docker because it has to be reverse proxied, ArcGIS will
 
 ## Environment
 
+Copy sample.env to .env and edit.
 
 ### Deploy
 
